@@ -1,8 +1,9 @@
 import { Provider } from 'react-redux';
-import App, { Container } from 'next/app';
+import App from 'next/app';
 import withRedux from 'next-redux-wrapper';
 import { Store } from '../services/store';
-
+import { ThemeProvider } from 'styled-components';
+import ActualTheme from '../utils/theme';
 export default withRedux(Store, { debug: true })(
   class MyApp extends App {
     static async getInitialProps({ Component, ctx }) {
@@ -16,14 +17,13 @@ export default withRedux(Store, { debug: true })(
     }
 
     render() {
-      console.log("those props?",this.props)
       const { Component, pageProps, store } = this.props;
       return (
-        <Container>
-          <Provider store={store}>
+        <Provider store={store}>
+          <ThemeProvider theme={ ActualTheme.studio }>
             <Component {...pageProps} />
-          </Provider>
-        </Container>
+          </ThemeProvider>
+        </Provider>
       );
     }
   }

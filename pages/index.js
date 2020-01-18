@@ -1,3 +1,13 @@
-const home = () => "Welcome to actual home";
+import React, {Component} from 'react';
+import TemplateLayout from '../components/Template';
 
-export default home;
+class HomePage extends Component {
+  render(){
+    return (
+      <TemplateLayout>
+      </TemplateLayout>
+    );
+  }
+}
+
+export default HomePage;
