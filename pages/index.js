@@ -1,13 +1,8 @@
-import React, {Component} from 'react';
+import React from 'react';
 import TemplateLayout from '../components/Template';
 
-class HomePage extends Component {
-  render(){
-    return (
-      <TemplateLayout>
-      </TemplateLayout>
-    );
-  }
-}
+const HomePage = () => (
+  <TemplateLayout />
+);
 
 export default HomePage;

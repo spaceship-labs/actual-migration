@@ -1,4 +1,4 @@
-import { fork } from 'redux-saga/effects';
+// import { fork } from 'redux-saga/effects';
 // import signup from 'containers/Signup/sagas';
 
 function* run() {

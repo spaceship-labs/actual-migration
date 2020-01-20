@@ -1,12 +1,10 @@
-import { createStore, applyMiddleware } from 'redux';
-import createSagaMiddleware from 'redux-saga'
-import { combineReducers } from 'redux';
+import { createStore, applyMiddleware, combineReducers } from 'redux';
+import createSagaMiddleware from 'redux-saga';
 import logger from 'redux-logger';
-
 import reducers from './reducer';
-import sagas from './sagas'
+import sagas from './sagas';
 
-const sagaMiddleware = createSagaMiddleware()
+const sagaMiddleware = createSagaMiddleware();
 const developmentMiddleware = [];
 if (process.env.NODE_ENV === 'development') {
   developmentMiddleware.push(logger);
@@ -19,17 +17,21 @@ const middlewareList = [...developmentMiddleware, sagaMiddleware];
 //   containers: reducers.containers},
 // );
 
-function temporalReducer(state = initialState, action) {
+function temporalReducer(state = {}, action) {
   switch (action.type) {
     default:
-      return state
+      return state;
   }
 }
 
 
 const Store = (initialState = {}) => {
-  const createdStore= createStore(temporalReducer, initialState, applyMiddleware(...middlewareList));
-  sagaMiddleware.run(sagas.run)
+  const createdStore = createStore(
+    temporalReducer,
+    initialState,
+    applyMiddleware(...middlewareList),
+  );
+  sagaMiddleware.run(sagas.run);
   return createdStore;
 };
-export {Store};
+export default Store;

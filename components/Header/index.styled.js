@@ -1,7 +1,7 @@
 import Styled from 'styled-components';
 
 const HeaderContainer = Styled.header`
-  background-color: ${props=>props.theme.primaryBackground};
+  background-color: ${(props) => props.theme.primaryBackground};
   color: #fff;
 `;
 
@@ -13,5 +13,5 @@ const Logo = Styled.img`
 
 export {
   HeaderContainer,
-  Logo
-}
+  Logo,
+};
