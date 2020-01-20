@@ -12,23 +12,15 @@ if (process.env.NODE_ENV === 'development') {
 
 const middlewareList = [...developmentMiddleware, sagaMiddleware];
 
-// const rootReducer = combineReducers(
-//   {api: reducers.api,
-//   containers: reducers.containers},
-// );
-
-function temporalReducer(state = {}, action) {
-  switch (action.type) {
-    default:
-      return state;
-  }
-}
+const rootReducer = combineReducers(
+  { containers: reducers },
+);
 
 
-const Store = (initialState = {}) => {
+const Store = () => {
   const createdStore = createStore(
-    temporalReducer,
-    initialState,
+    rootReducer,
+    undefined,
     applyMiddleware(...middlewareList),
   );
   sagaMiddleware.run(sagas.run);
