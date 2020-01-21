@@ -5,3 +5,10 @@
 * Master Actual Studio [`Working on it`]
 * production-home Actual Home [`Pending`]
 * production-kids Actual kids [`Pending`] 
+
+#### RUN APP
+```
+npm install --global yarn
+npm install
+yarn dev
+```
