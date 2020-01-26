@@ -1,11 +1,21 @@
 import React from 'react';
-import { HeaderContainer, Logo } from './index.styled';
-
+import {
+  HeaderContainer,
+  CenteredContainer,
+  Logo,
+  BurgerIcon,
+} from './index.styled';
 import StudioLogo from '../../assets/Actual-Studio-White-Logo.png';
+import StudioLogoM from '../../assets/Actual-Studio-Mobile-White-Logo.png';
+import SearchBox from '../SearchBox';
 
 const Header = () => (
-  <HeaderContainer>
-    <Logo src={StudioLogo} />
+  <HeaderContainer position="fixed">
+    <CenteredContainer>
+      <BurgerIcon />
+      <Logo imgs={[StudioLogo, StudioLogoM]} />
+      <SearchBox />
+    </CenteredContainer>
   </HeaderContainer>
 );
 
