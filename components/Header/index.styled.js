@@ -25,8 +25,8 @@ const Logo = Styled.div`
     background-image: url(${(props) => props.imgs[1]});
   }
   @media (min-width: ${devices.laptop}) {
-    width: 144px;
-    height: 72px;
+    width: 140px;
+    height: 70px;
     background-image: url(${(props) => props.imgs[0]});
 
   }
