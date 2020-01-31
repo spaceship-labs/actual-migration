@@ -1,10 +1,13 @@
 import React from 'react';
 import Header from '../Header';
+import { Content } from './index.styled';
 
 const Template = ({ children }) => (
   <div>
     <Header />
-    {children}
+    <Content>
+      {children}
+    </Content>
     <style global jsx>
       {`
         @import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
