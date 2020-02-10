@@ -6,6 +6,14 @@ import Carousel from '../components/Carousel';
 const HomePage = () => (
   <TemplateLayout>
     <Carousel /* imgs={[Banner1, Banner1]} */ />
+    <style jsx global>
+      {`
+        body{
+          font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+        }
+      `}
+    </style>
+
   </TemplateLayout>
 );
 
