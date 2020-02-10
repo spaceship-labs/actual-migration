@@ -17,9 +17,9 @@ const StyledButton = Styled(Button)`
   color:${(props) => props.theme.buttonPrimaryText} !important;
   height:31px;
   margin-top:5px !important;
-  padding: 0 10px !important;
+  padding: 0 20px !important;
   font-weight: bold !important;
-  font:400 13.3333px Arial !important;
+  font:1000 11px Arial !important;
 
   @media (min-width: ${devices.tablet}) {
     margin-top:10px !important;
@@ -28,8 +28,6 @@ const StyledButton = Styled(Button)`
     background-color:${(props) => props.theme.buttonPrimaryBackground} !important;
     height:32px;
     margin-top:20px !important;
-    padding: 0 10px !important;
-    font-weight: bold !important;
     color:${(props) => props.theme.buttonPrimaryText} !important;
   }
 

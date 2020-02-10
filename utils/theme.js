@@ -1,6 +1,7 @@
 const theme = {
   studio: {
     primaryBackground: '#000',
+    bubblePrimaryBackground: '#2965b9',
     buttonPrimaryBackground: '#cc262f',
     buttonPrimaryText: '#fff',
   },
