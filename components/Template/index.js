@@ -1,11 +1,13 @@
 import React from 'react';
 import Header from '../Header';
+import SmartMenu from '../SmartMenu';
 import { Content } from './index.styled';
 
 const Template = ({ children }) => (
   <div>
     <Header />
     <Content>
+      <SmartMenu />
       {children}
     </Content>
     <style global jsx>

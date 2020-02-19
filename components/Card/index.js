@@ -24,7 +24,7 @@ const Card = ({
       <Content>
         <Img src={productImage} alt="" />
         <DiscountBubble isVisible={discountValue}>
-          {`-${discountValue}`}
+          {`-${discountValue}%`}
         </DiscountBubble>
         <Button>VER</Button>
 
