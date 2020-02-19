@@ -41,7 +41,7 @@ class Carousel extends Component {
           ))}
         </Flickity>
         <Container>
-          <Ribbon src={RibbonShipping} />
+          {imgs && <Ribbon src={RibbonShipping} />}
         </Container>
       </div>
     );
