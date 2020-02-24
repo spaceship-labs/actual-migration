@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { StyledLink, StyledSpan, StyledSection } from './index.styled';
 
 const section = () => (
@@ -9,17 +10,22 @@ const section = () => (
         <strong>|</strong>
       </StyledSpan>
     </a>
-    <StyledLink href="/nuestras-marcas">
-      <StyledSpan>
-        NUESTRAS MARCAS
-        <strong>|</strong>
-      </StyledSpan>
-    </StyledLink>
-    <StyledLink href="/contactanos">
-      <StyledSpan>
-        CONTACTO
-      </StyledSpan>
-    </StyledLink>
+    <Link href="/nuestras-marcas" passHref>
+      <StyledLink>
+        <StyledSpan>
+          NUESTRAS MARCAS
+          <strong>|</strong>
+        </StyledSpan>
+      </StyledLink>
+    </Link>
+    <Link href="/contactanos" passHref>
+      <StyledLink>
+        <StyledSpan>
+          CONTACTO
+        </StyledSpan>
+      </StyledLink>
+    </Link>
+
   </StyledSection>
 );
 

@@ -1,12 +1,13 @@
 import Styled from 'styled-components';
+import devices from '../../utils/devices';
 
 const shadowStyle = ` 
-  -webkit-box-shadow: 0px 9px 8px -6px rgba(0,0,0,1);
-  -moz-box-shadow: 0px 9px 8px -6px rgba(0,0,0,1);
-  box-shadow: 0px 9px 8px -6px rgba(0,0,0,1);
+  -webkit-box-shadow: 0px 9px 4px -6px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 9px 4px -6px rgba(0,0,0,1);
+  box-shadow: 0px 9px 4px -6px rgba(0,0,0,1);
 `;
 const Container = Styled.div`
-  padding: 5px 5px;
+  padding: 5px 5px 5px 15px;
   display: flex;
   min-width: 20%;
   margin: 5px 20px;
@@ -20,6 +21,9 @@ const Container = Styled.div`
       cursor: pointer;
     }
   }
+  @media (min-width:${devices.laptop}){
+    margin: 5px 20px;
+  }
 `;
 
 const Img = Styled.img`
@@ -32,8 +36,8 @@ const Img = Styled.img`
 
 const Paragraph = Styled.p`
   margin: 0;
-  margin-top: ${(props) => (props.title ? '20' : '0')}px;
-  width: 100%;
+  max-width:200px;
+  margin-top: ${(props) => (props.isTitle ? '20' : '0')}px;
   ${(props) => (props.reverse ? 'text-align: right;' : '')}
 `;
 
@@ -69,7 +73,7 @@ const DiscountBubble = Styled.div`
   min-width: 45px;
   min-height: 45px;
   top: -220px;
-  left: 40px;
+  left:20px;
   font-size: 12px;
   font-weight: bold;
   border-radius: 50%;
@@ -77,6 +81,11 @@ const DiscountBubble = Styled.div`
   color: #fff; 
   ${shadowStyle}
   z-index: 900;
+  @media (min-width:${devices.laptop}){
+    top: -220px;
+    left:16px;
+  }
+
 `;
 
 const Button = Styled.button`

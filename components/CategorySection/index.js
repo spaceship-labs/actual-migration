@@ -18,7 +18,7 @@ const CategorySection = ({ title, data = [], isFetching }) => {
       <ResultsSection>
         <AiOutlineSearch size="24" />
         <Number>{n}</Number>
-      Resultados
+        Resultados
       </ResultsSection>
       {data.map((product, i) => <Card key={i} {...product} />)}
       <FullWidth>

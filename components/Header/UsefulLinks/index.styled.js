@@ -13,9 +13,8 @@ const StyledSpan = Styled.span`
     }
 `;
 
-const StyledLink = Styled(Link)`
+const StyledLink = Styled.a`
     color: #fff;
-    
 `;
 const StyledSection = Styled.section`
     /* Not shown in mobile */

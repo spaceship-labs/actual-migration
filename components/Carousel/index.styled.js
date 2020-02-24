@@ -5,9 +5,13 @@ import devices from '../../utils/devices';
 const Container = Styled.div`
   display: flex;
   justify-content: center;
+  flex-direction:row;
 `;
 
 const Carousel = Styled(Flickity)`
+:focus {
+  outline:none;
+}
 overflow-x: hidden;
 img{
   width: 100%;
