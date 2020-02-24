@@ -14,7 +14,7 @@ const Card = ({
   link,
   productImage,
   discountValue,
-  title,
+  productTitle,
   beforePrice,
   afterPrice,
   includeTax,
@@ -28,8 +28,8 @@ const Card = ({
         </DiscountBubble>
         <Button>VER</Button>
 
-        <Paragraph title>
-          <strong><Span size={12}>{title}</Span></strong>
+        <Paragraph isTitle>
+          <strong><Span size={12}>{productTitle}</Span></strong>
         </Paragraph>
         <Paragraph reverse>
           <small>
