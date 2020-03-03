@@ -7,8 +7,9 @@ import {
 const Subcategories = ({ invert, childs, featuredImages }) => (
   <Container invert={invert}>
     <Column>
-      {childs && childs.map(({ title, link }) => (
-        <Link href="/category/[pid]" as={link}>
+      {childs && childs.map(({ title, link }, index) => (
+        // eslint-disable-next-line react/no-array-index-key
+        <Link key={index} href="/category/[pid]" as={link}>
           <Item>
             {title}
             <hr />
