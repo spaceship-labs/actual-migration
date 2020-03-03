@@ -20,9 +20,23 @@ export default withRedux(Store, { debug: true })(
 
     render() {
       const { Component, pageProps, store } = this.props;
+      let mainTheme;
+      switch (process.env.theme) {
+        case 'studio':
+          mainTheme = ActualTheme.studio;
+          break;
+        case 'home':
+          mainTheme = ActualTheme.home;
+          break;
+        case 'kids':
+          mainTheme = ActualTheme.kids;
+          break;
+        default:
+          mainTheme = ActualTheme.studio;
+      }
       return (
         <Provider store={store}>
-          <ThemeProvider theme={ActualTheme.studio}>
+          <ThemeProvider theme={mainTheme}>
             <Component {...pageProps} />
           </ThemeProvider>
         </Provider>
