@@ -14,6 +14,7 @@ import ProductCard from '../Card';
 
 const testData = [
   {
+    productCode: 'ST2018',
     link: 'http://google.com',
     productImage: 'https://via.placeholder.com/300',
     productTitle: 'Sillon Katnn Vouitton de ceda decorado luminoso',
@@ -22,6 +23,7 @@ const testData = [
     includeTax: false,
   },
   {
+    productCode: 'ST2019',
     link: 'http://google.com',
     productImage: 'https://via.placeholder.com/300',
     discountValue: 15,
@@ -31,6 +33,7 @@ const testData = [
     includeTax: true,
   },
   {
+    productCode: 'ST2020',
     link: 'http://google.com',
     productImage: 'https://via.placeholder.com/300',
     discountValue: 15,
@@ -40,6 +43,7 @@ const testData = [
     includeTax: true,
   },
   {
+    productCode: 'ST2018',
     link: 'http://google.com',
     productImage: 'https://via.placeholder.com/300',
     discountValue: 15,
@@ -48,6 +52,7 @@ const testData = [
     afterPrice: 15000,
     includeTax: true,
   }, {
+    productCode: 'ST2018',
     link: 'http://google.com',
     productImage: 'https://via.placeholder.com/300',
     discountValue: 15,
@@ -56,6 +61,7 @@ const testData = [
     afterPrice: 15000,
     includeTax: true,
   }, {
+    productCode: 'ST2018',
     link: 'http://google.com',
     productImage: 'https://via.placeholder.com/300',
     discountValue: 15,

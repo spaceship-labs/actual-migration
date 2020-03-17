@@ -38,7 +38,7 @@ const Footer = () => (
                       ))
                     }
                   {
-                    sections && sections.map((section) => {
+                    sections && sections.map((section, index) => {
                       const {
                         sectionTitle,
                         sectionLink,
@@ -47,7 +47,7 @@ const Footer = () => (
                         schedule,
                       } = section;
                       return (
-                        <div key={sectionTitle || subtitle}>
+                        <div key={index}>
                           {sectionLink
                             ? (
                               <Link href={sectionLink} passHref>

@@ -5,6 +5,7 @@ import withRedux from 'next-redux-wrapper';
 import { ThemeProvider } from 'styled-components';
 import Store from '../services/store';
 import ActualTheme from '../utils/theme';
+import '../components/ProductGallery/style.css';
 
 export default withRedux(Store, { debug: true })(
   class MyApp extends App {

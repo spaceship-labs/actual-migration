@@ -11,7 +11,7 @@ import Fb from '../../../assets/Footer/fb.png';
 import { Container, Image, SocialImage } from './index.styled';
 
 const FooterLogos = () => (
-  <Container>
+  <Container isParent>
     <Container mr>
       <Image src={TrueWave} height="20" alt="" />
       <Image src={TrueProsa} height="20" alt="" />
