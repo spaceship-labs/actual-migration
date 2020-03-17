@@ -56,15 +56,6 @@ const CategoryPage = () => {
   return (
     <TemplateLayout>
       <Section title={name} data={testData} isFetching />
-      <style jsx global>
-        {`
-          body {
-
-          font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
-          }
-        `}
-      </style>
-
     </TemplateLayout>
   );
 };
