@@ -3,29 +3,17 @@ import TemplateLayout from '../components/Template';
 import Carousel from '../components/Carousel';
 import ProductSlider from '../components/ProductSlider';
 // import Banner1 from '../assets/Coverphoto/AS_ENE_2020_web_banner.jpg';
+import { WhiteContainer } from '../components/Template/index.styled';
 
 const HomePage = () => (
   <TemplateLayout>
     <Carousel /* imgs={[Banner1, Banner1]} */ />
 
-
-    <div className="whiteBg">
+    <WhiteContainer>
       <ProductSlider collectionTitle="Nueva Colección" collectionLink="/category/melody" />
       <ProductSlider collectionTitle="Nueva Colección" collectionLink="/category/melody" />
       <ProductSlider collectionTitle="Nueva Colección" collectionLink="/category/melody" />
-    </div>
-
-    <style jsx global>
-      {`
-        body{
-          font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
-        }
-        .whiteBg{
-          background-color:#fff;
-        }
-      `}
-    </style>
-
+    </WhiteContainer>
   </TemplateLayout>
 );
 
