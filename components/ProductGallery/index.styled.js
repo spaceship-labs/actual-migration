@@ -14,7 +14,7 @@ const Container = Styled.div`
   padding-top:40px;
   justify-content:center;
   @media (min-width:${devices.laptop}){
-    justify-content:right;
+    justify-content:flex-end;
   }
 `;
 const BubbleDiscount = Styled.div`
@@ -26,7 +26,7 @@ const BubbleDiscount = Styled.div`
   align-self: flex-end;
   min-width: 45px;
   min-height: 45px;
-  top: -450px;
+  top: -330px;/*-470px;*/
   right: 60px;
   font-size: 14px;
   font-weight: bold;
@@ -35,12 +35,15 @@ const BubbleDiscount = Styled.div`
   color: #fff; 
   ${shadowStyle}
   z-index: 900;
-
+  @media (min-width:${devices.tablet}){
+    top: -410px;
+    right: 60px;
+  }
   @media (min-width:${devices.laptop}){
     width: 45px;
     height: 45px;
-    top: -600px;
-    right:20px;
+    top: -590px;
+    right: 50px;
   }
 
 `;

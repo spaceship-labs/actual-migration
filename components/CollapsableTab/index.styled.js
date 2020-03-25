@@ -4,7 +4,6 @@ const Container = Styled.div`
   display:flex;
   flex:1;
   flex-direction:column;
-  border:1px solid #ccc;
   margin: 0 10%;
 `;
 const Tab = Styled.div`
@@ -17,5 +16,8 @@ const Tab = Styled.div`
 
 const Content = Styled.div`
   padding: 15px 25px;
+  border:1px solid #ccc;
+  background-color:#fff;
+
 `;
 export { Container, Tab, Content };

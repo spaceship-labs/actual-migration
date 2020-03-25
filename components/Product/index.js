@@ -56,9 +56,9 @@ const Product = () => (
         <ProductPrice product={testDataProduct} mainPromo={testMainPromo} />
       </ContainerColumn>
     </ProductContainer>
-    <CollapsableTab title="Hola mundo" content={'<p><strong>hi</strong/></p>'} />
-    <CollapsableTab title="Hola mundo" content={'<p><strong>hi</strong/></p>'} />
-    <CollapsableTab title="Hola mundo" content={'<p><strong>hi</strong/></p>'} />
+    <CollapsableTab title="DETALLES DEL ARTÍCULO" content={'<p><strong>hi</strong/></p>'} />
+    <CollapsableTab title="FORMAS DE PAGO" content={'<p><strong>hi</strong/></p>'} />
+    <CollapsableTab title="DETALLES DE LA ENTREGA" content={'<p><strong>hi</strong/></p>'} />
   </Container>
 );
 

@@ -2,10 +2,13 @@ import Styled from 'styled-components';
 import devices from '../../utils/devices';
 
 const Container = Styled.div`
+  margin-top:10px;
   display:flex;
   flex:1;
   flex-direction:column;
   flex-wrap:wrap;
+  padding-bottom:20px;
+  background-color:#fff;
 `;
 const ProductContainer = Styled.div`
   display:flex;

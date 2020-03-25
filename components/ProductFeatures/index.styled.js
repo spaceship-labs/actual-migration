@@ -76,6 +76,9 @@ const AddToCartButton = Styled.button`
   &:hover {
     letter-spacing: 3px;
   }
+  @media(min-width:${devices.laptop}){
+    margin-top:30px;
+  }
 `;
 const CartLogo = Styled(AiOutlineShoppingCart)`
   font-size:32px;
