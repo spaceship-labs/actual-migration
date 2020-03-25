@@ -1,19 +1,28 @@
 import Styled from 'styled-components';
+import devices from '../../../utils/devices';
 
 const Container = Styled.div`
   display:flex;
-  flex: 0 1;
+  flex-wrap:wrap;
   flex-direction:row;
   justify-content:center;
   align-items:center;
+  ${(props) => (props.isParent ? 'width:100%;' : '')}
+  @media (min-width: ${devices.laptop}) {
+    flex-wrap: no-wrap;
+  }
   ${(props) => (props.mr ? 'margin-right:10%;' : '')}
   ${(props) => (props.useBg ? `
     background-image:url(${props.img});
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    min-width:350px;
     min-height:150px;
+    min-width:200px;
+  @media (min-width: ${devices.laptop}) {
+    min-width:300px;
+    min-height:150px;
+  }
   ` : '')}
 `;
 

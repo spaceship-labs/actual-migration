@@ -15,6 +15,7 @@ const Container = Styled.div`
   &:hover{
     outline-style: solid;
     outline-width: 1px;
+    cursor: pointer;
     ${shadowStyle}
     button{
       visibility: visible;
@@ -49,7 +50,7 @@ const Span = Styled.span`
 
 `;
 
-const Link = Styled.a`
+const StyledLink = Styled.a`
   text-decoration: none;
   margin: 0;
   padding: 0;
@@ -111,7 +112,7 @@ export {
   Img,
   Paragraph,
   Span,
-  Link,
+  StyledLink,
   DiscountBubble,
   Button,
 };
