@@ -10,6 +10,7 @@ import StudioLogo from '../../assets/Actual-Studio-White-Logo.png';
 import StudioLogoM from '../../assets/Actual-Studio-Mobile-White-Logo.png';
 import SearchBox from './SearchBox';
 import UsefulLinks from './UsefulLinks';
+import LoginModal from '../LoginModal';
 
 const Header = () => (
   <HeaderContainer position="fixed">
@@ -20,6 +21,7 @@ const Header = () => (
       </Link>
       <UsefulLinks />
       <SearchBox />
+      <LoginModal isVisible />
     </CenteredContainer>
   </HeaderContainer>
 );
