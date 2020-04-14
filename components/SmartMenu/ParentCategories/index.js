@@ -6,17 +6,17 @@ import SubcategoriesContent from '../Subcategories';
 const ParentCategory = ({
   invert,
   image,
-  categoryName,
-  childs,
+  Name,
+  Childs,
   featuredImages,
-  link,
+  Handle,
 }) => (
-  <Link href="/category/[pid]" as={link}>
+  <Link href="/category/[pid]" as={`/category/${Handle}`}>
     <Container>
       <Img src={image} />
-      <P>{categoryName}</P>
+      <P>{Name}</P>
       <SubcategoriesContent
-        childs={childs}
+        childs={Childs}
         invert={invert}
         featuredImages={featuredImages}
       />

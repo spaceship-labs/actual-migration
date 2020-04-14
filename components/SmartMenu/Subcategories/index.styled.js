@@ -9,12 +9,12 @@ const shadowStyle = `
 const Container = Styled.div`
   background-color:#f8f8f8;
   position:absolute;
-  margin-top:90px;
+  margin-top:95px;
   align-self:flex-start;
   flex-wrap: wrap;
   min-width: 40vw;
   min-height: 30vh;
-  max-height:40vh;
+  max-height:45vh;
   ${shadowStyle}
   z-index:999;
   ${(props) => (props.invert ? `

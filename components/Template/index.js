@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../Header';
-import SmartMenu from '../SmartMenu';
+import SmartMenu from '../../containers/SmartMenu';
 import { Content } from './index.styled';
 import Footer from '../Footer';
 

@@ -107,7 +107,7 @@ class ProductSlider extends Component {
             {testData.map((product, i) => <ProductCard key={i} {...product} />)}
           </Flickity>
           <CircleContainer>
-            <Link href="/category/[pid]" as={collectionLink} passHref>
+            <Link href="/category/[pid]" as={`/category/${collectionLink}`} passHref>
               <Circle>
                 <p>
                   VER
@@ -119,7 +119,7 @@ class ProductSlider extends Component {
             </Link>
           </CircleContainer>
         </Container>
-        <Link href="/category/[pid]" as={collectionLink} passHref>
+        <Link href="/category/[pid]" as={`/category/${collectionLink}`} passHref>
           <MobileButton>VER MÁS PRODUCTOS</MobileButton>
         </Link>
       </div>

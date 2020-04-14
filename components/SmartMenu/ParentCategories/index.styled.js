@@ -14,7 +14,7 @@ const Container = Styled.div`
   display:flex;
   flex-direction:column;
   align-items:center;
-  width: 120px;
+  width: 140px;
   position:relative;
 `;
 
@@ -27,7 +27,6 @@ const P = Styled.p`
   text-align:center;
   text-transform: uppercase;
   font-size:14px;
-  max-width:65px;
 `;
 
 export {

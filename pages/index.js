@@ -10,9 +10,9 @@ const HomePage = () => (
     <Carousel /* imgs={[Banner1, Banner1]} */ />
 
     <WhiteContainer>
-      <ProductSlider collectionTitle="Nueva Colección" collectionLink="/category/melody" />
-      <ProductSlider collectionTitle="Nueva Colección" collectionLink="/category/melody" />
-      <ProductSlider collectionTitle="Nueva Colección" collectionLink="/category/melody" />
+      <ProductSlider collectionTitle="Nueva Colección" collectionLink="melody" />
+      <ProductSlider collectionTitle="Nueva Colección" collectionLink="melody" />
+      <ProductSlider collectionTitle="Nueva Colección" collectionLink="melody" />
     </WhiteContainer>
   </TemplateLayout>
 );

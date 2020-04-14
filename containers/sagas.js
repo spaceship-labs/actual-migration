@@ -1,8 +1,8 @@
-// import { fork } from 'redux-saga/effects';
-// import signup from 'containers/Signup/sagas';
+import { fork } from 'redux-saga/effects';
+import smartMenu from './SmartMenu/sagas';
 
 function* run() {
-//  yield fork(signup.run);
+  yield fork(smartMenu.run);
 }
 
 export default { run };
