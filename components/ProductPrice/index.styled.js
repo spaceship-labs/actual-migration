@@ -1,5 +1,5 @@
 import Styled from 'styled-components';
-import devices from '../../utils/devices';
+import devices from 'utils/devices';
 
 const ProductPriceContainer = Styled.div`
   display:flex;

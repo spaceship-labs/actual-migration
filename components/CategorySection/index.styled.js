@@ -1,6 +1,6 @@
 import Styled from 'styled-components';
 import CircularProgress from '@material-ui/core/CircularProgress';
-import devices from '../../utils/devices';
+import devices from 'utils/devices';
 
 const Section = Styled.section`
   display: flex;

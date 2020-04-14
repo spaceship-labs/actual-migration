@@ -1,6 +1,6 @@
 import Styled from 'styled-components';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
-import devices from '../../utils/devices';
+import devices from 'utils/devices';
 
 const Section = Styled.section`
   margin: 0 10%;

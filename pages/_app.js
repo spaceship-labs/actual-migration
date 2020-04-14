@@ -3,10 +3,10 @@ import { Provider } from 'react-redux';
 import App from 'next/app';
 import withRedux from 'next-redux-wrapper';
 import { ThemeProvider } from 'styled-components';
-import Store from '../services/store';
-import ActualTheme from '../utils/theme';
-import '../components/ProductGallery/style.css';
-import '../utils/globalcss.css';
+import ActualTheme from 'utils/theme';
+import Store from 'services/store';
+import 'components/ProductGallery/style.css';
+import 'utils/globalcss.css';
 
 export default withRedux(Store, { debug: true })(
   class MyApp extends App {

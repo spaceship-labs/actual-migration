@@ -1,5 +1,5 @@
 import Styled from 'styled-components';
-import devices from '../../utils/devices';
+import devices from 'utils/devices';
 
 const shadowStyle = ` 
   -webkit-box-shadow: 0px 9px 4px -6px rgba(0,0,0,1);

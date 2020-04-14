@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import SmarMenuComponent from 'components/SmartMenu';
 import dispatcher from './dispatcher';
 import propsSelector from './selectors';
-import SmarMenuComponent from '../../components/SmartMenu';
 
 class SmartMenuContainer extends Component {
   componentDidMount() {

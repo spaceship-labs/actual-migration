@@ -1,6 +1,6 @@
 import React from 'react';
-import TemplateLayout from '../../components/Template';
-import { ParagraphContainer } from '../../components/Template/index.styled';
+import TemplateLayout from 'components/Template';
+import { ParagraphContainer } from 'components/Template/index.styled';
 
 const TextilMaintanceManualPage = () => (
   <TemplateLayout>

@@ -1,11 +1,11 @@
 import React from 'react';
-import TemplateLayout from '../components/Template';
-import { ParagraphContainer, CenteredContainer } from '../components/Template/index.styled';
-import TrusDigicert from '../assets/Footer/trust_brands_digicert.svg';
-import TrueKount from '../assets/Footer/trust_brands_kount.svg';
-import TrueMcafee from '../assets/Footer/trust_brands_mcafee.svg';
-import TrueProsa from '../assets/Footer/trust_brands_prosa.svg';
-import TrueWave from '../assets/Footer/trust_brands_trustwave.svg';
+import TrusDigicert from 'assets/Footer/trust_brands_digicert.svg';
+import TrueKount from 'assets/Footer/trust_brands_kount.svg';
+import TrueMcafee from 'assets/Footer/trust_brands_mcafee.svg';
+import TrueProsa from 'assets/Footer/trust_brands_prosa.svg';
+import TrueWave from 'assets/Footer/trust_brands_trustwave.svg';
+import { ParagraphContainer, CenteredContainer } from 'components/Template/index.styled';
+import TemplateLayout from 'components/Template';
 
 const SecurityPage = () => (
   <TemplateLayout>

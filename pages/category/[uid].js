@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-import TemplateLayout from '../../components/Template';
-import Section from '../../components/CategorySection';
+import TemplateLayout from 'components/Template';
+import Section from 'components/CategorySection';
 
 const testData = [
   {

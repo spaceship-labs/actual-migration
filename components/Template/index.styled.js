@@ -1,5 +1,5 @@
 import Styled from 'styled-components';
-import devices from '../../utils/devices';
+import devices from 'utils/devices';
 
 const Content = Styled.div`
     margin-top:40px;

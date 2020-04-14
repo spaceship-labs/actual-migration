@@ -1,5 +1,5 @@
 import { takeLatest, call, put } from 'redux-saga/effects';
-import api from '../../services/api';
+import api from 'services/api';
 import actions from './actions';
 
 function* loadCategoriesTree() {

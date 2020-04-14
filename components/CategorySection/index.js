@@ -1,6 +1,6 @@
 import React from 'react';
 import { AiOutlineSearch } from 'react-icons/ai';
-import Card from '../Card';
+import Card from 'components/Card';
 import {
   Section,
   SectionTitle,

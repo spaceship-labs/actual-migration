@@ -9,7 +9,7 @@ import {
   MobileButton,
 } from './index.styled';
 
-import ProductCard from '../Card';
+import ProductCard from 'components/Card';
 
 
 const testData = [

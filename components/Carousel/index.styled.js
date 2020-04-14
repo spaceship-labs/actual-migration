@@ -1,6 +1,6 @@
 import Flickity from 'react-flickity-component';
 import Styled from 'styled-components';
-import devices from '../../utils/devices';
+import devices from 'utils/devices';
 
 const Container = Styled.div`
   display: flex;

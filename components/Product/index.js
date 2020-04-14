@@ -4,10 +4,10 @@ import {
   ContainerColumn,
   ProductContainer,
 } from './index.styled';
-import ProductGallery from '../ProductGallery';
-import ProductFeatures from '../ProductFeatures';
-import ProductPrice from '../ProductPrice';
-import CollapsableTab from '../CollapsableTab';
+import ProductGallery from 'components/ProductGallery';
+import ProductFeatures from 'components/ProductFeatures';
+import ProductPrice from 'components/ProductPrice';
+import CollapsableTab from 'components/CollapsableTab';
 
 const testDataProduct = {
   itemCode: 'ST2012',

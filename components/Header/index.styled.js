@@ -2,7 +2,7 @@ import Styled from 'styled-components';
 import HeaderBar from '@material-ui/core/AppBar';
 import { MdMenu } from 'react-icons/md';
 
-import devices from '../../utils/devices';
+import devices from 'utils/devices';
 
 const HeaderContainer = Styled(HeaderBar)`
   background-color: ${(props) => props.theme.primaryBackground} !important;

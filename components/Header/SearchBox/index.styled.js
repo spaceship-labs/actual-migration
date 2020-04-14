@@ -1,7 +1,7 @@
 import Styled from 'styled-components';
 import Button from '@material-ui/core/Button';
 import { MdSearch } from 'react-icons/md';
-import devices from '../../../utils/devices';
+import devices from 'utils/devices';
 
 const Container = Styled.div`
   display:${(props) => (props.isVisible ? 'flex' : 'none')};

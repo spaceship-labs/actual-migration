@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import Flickity from 'react-flickity-component';
+import RibbonShipping from 'assets/Coverphoto/ribbon.png';
 import { Container, Carousel as Flickity, Ribbon } from './index.styled';
-import RibbonShipping from '../../assets/Coverphoto/ribbon.png';
 
 class Carousel extends Component {
   constructor(props) {

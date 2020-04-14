@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-import TemplateLayout from '../../components/Template';
-import Product from '../../components/Product';
+import TemplateLayout from 'components/Template';
+import Product from 'components/Product';
 
 const CategoryPage = () => {
   const router = useRouter();

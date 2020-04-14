@@ -1,6 +1,6 @@
 import Styled from 'styled-components';
 import Link from 'next/link';
-import devices from '../../../utils/devices';
+import devices from 'utils/devices';
 
 const StyledSpan = Styled.span`
     max-height:20px;

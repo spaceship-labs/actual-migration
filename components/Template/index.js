@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from '../Header';
-import SmartMenu from '../../containers/SmartMenu';
+import SmartMenu from 'containers/SmartMenu';
+import Header from 'components/Header';
 import { Content } from './index.styled';
-import Footer from '../Footer';
+import Footer from 'components/Footer';
 
 const Template = ({ children }) => (
   <div>
