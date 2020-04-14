@@ -10,7 +10,8 @@ const Container = Styled.div`
   padding: 5px 5px 5px 15px;
   display: flex;
   min-width: 20%;
-  margin: 5px 20px;
+  min-height: 320px;
+  margin: 0 10px;
   justify-content: center;
   &:hover{
     outline-style: solid;
@@ -23,17 +24,25 @@ const Container = Styled.div`
     }
   }
   @media (min-width:${devices.laptop}){
-    margin: 5px 20px;
   }
 `;
 
 const Img = Styled.img`
   flex: 1;
-  margin-top: 20px;
-  max-width: 280px;
-  max-height: 200px;
+  height:200px;
   align-self: center;
 `;
+
+const ImageContainer = Styled.div`
+  display:flex;
+  flex: 1;
+  margin-top: 20px;
+  max-height:200px;
+  max-width:180px;
+  overflow:hidden;
+  justify-content:center;
+  align-items:center;
+`
 
 const Paragraph = Styled.p`
   margin: 0;
@@ -60,7 +69,6 @@ const Content = Styled.div`
   display: flex;
   color: #000;
   margin: 0;
-  width: 100%;
   justify-content: center;
   flex-direction: column;
 `;
@@ -74,7 +82,7 @@ const DiscountBubble = Styled.div`
   min-width: 45px;
   min-height: 45px;
   top: -220px;
-  left:20px;
+  right:10px;
   font-size: 12px;
   font-weight: bold;
   border-radius: 50%;
@@ -110,6 +118,7 @@ export {
   Container,
   Content,
   Img,
+  ImageContainer,
   Paragraph,
   Span,
   StyledLink,

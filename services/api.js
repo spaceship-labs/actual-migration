@@ -16,7 +16,10 @@ export default {
   API_BASE,
   site: {
     banners: {
-      get: (handle) => get(`/site/banners/${handle}`)
+      get: () => get(`/site/banners/${process.env.activeSite}`)
+    },
+    featuredProducts: {
+      get: () => get(`/featuredproduct/${process.env.siteId}`)
     }
   },
   categoriesTree: {

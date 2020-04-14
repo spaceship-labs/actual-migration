@@ -5,6 +5,7 @@ module.exports = withImages({
     theme: 'studio',
     activeSite: 'actual-studio',
     siteOption: 'studio',
+    siteId: '5850560ad21cb61c6eae217a',
     cdnUrl: 'https://d116li125og699.cloudfront.net'
   },
 });

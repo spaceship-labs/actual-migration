@@ -11,67 +11,6 @@ import {
 
 import ProductCard from 'components/Card';
 
-
-const testData = [
-  {
-    productCode: 'ST2018',
-    link: 'http://google.com',
-    productImage: 'https://via.placeholder.com/300',
-    productTitle: 'Sillon Katnn Vouitton de ceda decorado luminoso',
-    beforePrice: 16000,
-    afterPrice: 15000,
-    includeTax: false,
-  },
-  {
-    productCode: 'ST2019',
-    link: 'http://google.com',
-    productImage: 'https://via.placeholder.com/300',
-    discountValue: 15,
-    productTitle: 'Sillon Katnn Vouitton',
-    beforePrice: 16000,
-    afterPrice: 15000,
-    includeTax: true,
-  },
-  {
-    productCode: 'ST2020',
-    link: 'http://google.com',
-    productImage: 'https://via.placeholder.com/300',
-    discountValue: 15,
-    productTitle: 'Sillon Katnn Vouitton',
-    beforePrice: 16000,
-    afterPrice: 15000,
-    includeTax: true,
-  },
-  {
-    productCode: 'ST2018',
-    link: 'http://google.com',
-    productImage: 'https://via.placeholder.com/300',
-    discountValue: 15,
-    productTitle: 'Sillon Katnn Vouitton',
-    beforePrice: 16000,
-    afterPrice: 15000,
-    includeTax: true,
-  }, {
-    productCode: 'ST2018',
-    link: 'http://google.com',
-    productImage: 'https://via.placeholder.com/300',
-    discountValue: 15,
-    productTitle: 'Sillon Katnn Vouitton',
-    beforePrice: 16000,
-    afterPrice: 15000,
-    includeTax: true,
-  }, {
-    productCode: 'ST2018',
-    link: 'http://google.com',
-    productImage: 'https://via.placeholder.com/300',
-    discountValue: 15,
-    productTitle: 'Sillon Katnn Vouitton',
-    beforePrice: 16000,
-    afterPrice: 15000,
-    includeTax: true,
-  },
-];
-
 class ProductSlider extends Component {
   constructor(props) {
     super(props);
@@ -94,7 +33,7 @@ class ProductSlider extends Component {
 
   render() {
     const { config } = this.state;
-    const { collectionTitle, collectionLink } = this.props;
+    const { collectionTitle, collectionLink, products } = this.props;
     return (
       <div>
         <Title><span>{collectionTitle || 'Sin título'}</span></Title>
@@ -104,7 +43,7 @@ class ProductSlider extends Component {
             reloadOnUpdate
             options={config}
           >
-            {testData.map((product, i) => <ProductCard key={i} {...product} />)}
+            {products.map((product, i) => <ProductCard key={i} {...product} />)}
           </Flickity>
           <CircleContainer>
             <Link href="/category/[pid]" as={`/category/${collectionLink}`} passHref>

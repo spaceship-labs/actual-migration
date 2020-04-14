@@ -10,9 +10,7 @@ function* loadCategoriesTree() {
   } finally {
     yield put(actions.setLoading(false));
   }
-
 }
-
 
 function* run() {
   yield takeLatest(actions.loadCategories.type, loadCategoriesTree);

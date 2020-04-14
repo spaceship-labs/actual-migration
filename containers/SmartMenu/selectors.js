@@ -1,9 +1,9 @@
 import { createSelector } from 'reselect';
 import _ from 'underscore';
+import { buildProductImageUrl } from 'utils/utilities';
 
 const containerSelector = (state) => state.containers.SmartMenu;
 
-const CF_URL = `${process.env.cdnUrl}/uploads/products/`;
 const sortList = [
   {
     name: 'salas',
@@ -135,7 +135,7 @@ const propsSelector = createSelector(
       const cat = category;
       if (category.FeaturedProducts.length) {
         cat.FeaturedProducts = category.FeaturedProducts.filter((FeaturedProduct) => FeaturedProduct.Active === 'Y' && FeaturedProduct[activeStoreCode] > 0).slice(0, 2);
-        cat.featuredImages = cat.FeaturedProducts.map((product) => CF_URL + product.icon_filename);
+        cat.featuredImages = cat.FeaturedProducts.map((product) => buildProductImageUrl(product.icon_filename));
         // add icon
         cat.image = 'https://via.placeholder.com/300';
         acum.push(cat);

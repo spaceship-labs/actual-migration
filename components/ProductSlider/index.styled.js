@@ -22,65 +22,68 @@ const Container = Styled.div`
   flex:1;
   margin: 20px 0 0 0;
   @media (min-width:${devices.tablet}){
-    margin: 30px 0 0 10%;
+    margin: 30px 10% 0 10%;
   }
   @media (min-width:${devices.laptop}){
-    margin: 50px 0 0 10%;
+    margin: 50px 10% 0 10%;
   }
 `;
 
 const Carousel = Styled(Flickity)`
-max-width:100%;
-
-flex:1;
-:focus {
-  outline:none;
-}
-overflow-x: hidden;
-ol{
-  display:none;
-}
-&>button {
-  border: 0;
-  margin: 0 15px;
-  float: right;
-  min-width: 25px;
-  max-width: 25px;
-  min-height: 25px;
-  max-height: 25px;
-  text-align: center;
-  border-radius: 50%;
-  padding: 5px;
-  position: relative;
-  background-color: rgba(255,255,255,1);
-  color: rgba(100,100,100,.3);  
-  top: -150px;
-}
-&>button:nth-child(2) {
-  float: left;
-}
-@media (min-width:${devices.tablet}){
-  &>button{
-    display: block;
-    top: -90px;
+  flex:1;
+  :focus {
+    outline:none;
   }
-}
-@media (min-width:${devices.laptop}){
-  max-width:65%;
-
-  &>button{
-    min-width: 35px;
-    max-width: 35px;
-    min-height: 35px;
-    max-height: 35px;
-    top: -180px;
+  overflow-x: hidden;
+  ol{
+    display:none;
   }
-}
-@media (min-width:${devices.laptopL}){
   &>button {
-    top:-175px;
+    border: 0;
+    margin: 0 15px;
+    float: right;
+    min-width: 25px;
+    max-width: 25px;
+    min-height: 25px;
+    max-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 5px;
+    position: relative;
+    background-color: rgba(255,255,255,1);
+    color: rgba(100,100,100,.3);  
+    top: -150px;
   }
-}
+  &>button:nth-child(2) {
+    float: left;
+  }
+  @media (min-width:${devices.tablet}){
+    &>button{
+      display: block;
+      top: -90px;
+    }
+  }
+  @media (min-width:${devices.laptop}){
+    &>button{
+      min-width: 35px;
+      max-width: 35px;
+      min-height: 35px;
+      max-height: 35px;
+      top: -180px;
+    }
+    .flickity-viewport{
+      margin-top:10px;
+    }
+    .flickity-viewport>div>div{
+      min-width:30%;
+
+    }
+  }
+  @media (min-width:${devices.laptopL}){
+    &>button {
+      top:-175px;
+    }
+  }
 `;
 const CircleContainer = Styled.div`
 display:none;
