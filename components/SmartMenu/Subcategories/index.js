@@ -7,9 +7,8 @@ import {
 const Subcategories = ({ invert, childs, featuredImages }) => (
   <Container invert={invert}>
     <Column>
-      {childs && childs.map(({ title, link }, index) => (
-        // eslint-disable-next-line react/no-array-index-key
-        <Link key={index} href="/category/[pid]" as={link}>
+      {childs && childs.map(({ Name: title, Handle: link }) => (
+        <Link key={link} href="/category/[pid]" as={`/category/${link}`}>
           <Item>
             {title}
             <hr />
@@ -17,11 +16,10 @@ const Subcategories = ({ invert, childs, featuredImages }) => (
         </Link>
       ))}
     </Column>
-    {featuredImages.map(
-      (image, index) => {
+    {featuredImages && featuredImages.map(
+      (image) => {
         const size = featuredImages.length > 1 ? 2 : 1;
-        // eslint-disable-next-line react/no-array-index-key
-        return <Column key={index}><Image size={size} src={image} /></Column>;
+        return <Column key={image}><Image size={size} src={image} /></Column>;
       },
     )}
   </Container>

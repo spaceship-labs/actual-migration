@@ -35,9 +35,8 @@ class Carousel extends Component {
           reloadOnUpdate
           options={config}
         >
-          {imgs && imgs.map((img, index) => (
-            // eslint-disable-next-line react/no-array-index-key
-            <img key={index} src={img} alt="" />
+          {imgs && imgs.map((img) => (
+            <img key={img} src={img} alt="" />
           ))}
         </Flickity>
         <Container>
