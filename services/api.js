@@ -2,7 +2,8 @@ import axios from 'axios';
 
 const API_SH = 'https://api.actualstudio.com';
 const API_K = 'https://apikidsweb.miactual.com';
-const site = 'studio';
+const site = process.env.siteOption;
+
 const API_BASE = site === 'kids' ? API_K : API_SH;
 axios.defaults.baseURL = API_BASE;
 
@@ -13,6 +14,11 @@ const post = (url, params = {}) => axios.post(url, params);
 
 export default {
   API_BASE,
+  site: {
+    banners: {
+      get: (handle) => get(`/site/banners/${handle}`)
+    }
+  },
   categoriesTree: {
     get: () => get('/productcategory/getcategoriestree'),
     getCategoryChildsRelations: (handle) => {

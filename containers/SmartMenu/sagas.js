@@ -3,8 +3,14 @@ import api from 'services/api';
 import actions from './actions';
 
 function* loadCategoriesTree() {
-  const { data: categories } = yield call(api.categoriesTree.get);
-  yield put({ type: actions.setCategories.type, payload: categories });
+  try {
+    yield put(actions.setLoading(true));
+    const { data: categories } = yield call(api.categoriesTree.get);
+    yield put(actions.setCategories(categories));
+  } finally {
+    yield put(actions.setLoading(false));
+  }
+
 }
 
 

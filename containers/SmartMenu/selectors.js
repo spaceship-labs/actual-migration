@@ -3,29 +3,7 @@ import _ from 'underscore';
 
 const containerSelector = (state) => state.containers.SmartMenu;
 
-// categoriemodel
-/**
-  image: 'https://via.placeholder.com/300',
-  categoryName: 'Muebles',
-  link: '/category/muebles',
-  childs:
-  [
-    {
-      title: 'Salas',
-      link: '/category/salas',
-    },
-    {
-      title: 'Sillones',
-      link: '/category/sillones',
-    },
-  ],
-  featuredImages: [
-    'https://via.placeholder.com/500x700',
-    'https://via.placeholder.com/500x700',
-  ],
- */
-
-const CF_URL = 'https://d116li125og699.cloudfront.net/uploads/products/';
+const CF_URL = `${process.env.cdnUrl}/uploads/products/`;
 const sortList = [
   {
     name: 'salas',
@@ -114,10 +92,10 @@ const propsSelector = createSelector(
     const allCategories = containerState.get('categoriesTree');
     const tree = allCategories.filter((item) => (
       item
-        && !item.onKidsMenu
-        && item.Childs
-        && item.Childs.length > 0
-        && item.Childs.some((child) => child[activeStoreCode] > 0)
+      && !item.onKidsMenu
+      && item.Childs
+      && item.Childs.length > 0
+      && item.Childs.some((child) => child[activeStoreCode] > 0)
     ));
     const groupsLevel1 = _.groupBy(tree, 'Handle');
     const plainSortList = sortList.map((sortItem) => sortItem.name);

@@ -3,6 +3,9 @@ const withImages = require('next-images');
 module.exports = withImages({
   env: {
     theme: 'studio',
+    activeSite: 'actual-studio',
+    siteOption: 'studio',
+    cdnUrl: 'https://d116li125og699.cloudfront.net'
   },
 });
 
