@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { buildProductImageUrl, buildPrice } from 'utils/utilities';
+import { buildProductUrl, buildProductImageUrl, buildPrice } from 'utils/utilities';
 import {
   Container,
   Content,
@@ -24,7 +24,7 @@ const Card = ({
     <Container>
       <Link
         href="/[product]/[productCode]/"
-        as={`/${productTitle.split(' ').join('-')}/${productCode}/`}
+        as={buildProductUrl(productTitle, productCode)}
         passHref
       >
         <StyledLink>

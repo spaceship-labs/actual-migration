@@ -15,7 +15,7 @@
           "./"
         ],
         "alias": {
-          "assets": "./assets",
+          "assets": "./public/assets",
           "components": "./components",
           "containers": "./containers",
           "pages": "./pages",

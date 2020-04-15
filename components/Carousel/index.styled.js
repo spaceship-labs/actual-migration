@@ -9,6 +9,7 @@ const Container = Styled.div`
 `;
 
 const Carousel = Styled(Flickity)`
+margin-top:7px;
 :focus {
   outline:none;
 }

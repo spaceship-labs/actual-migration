@@ -7,7 +7,6 @@ const propsSelector = createSelector(
   (containerState) => {
     const featuredProducts = containerState.get('featuredProducts');
     const groupedProducts = _.groupBy(featuredProducts, 'categoryHandle');
-    console.log(groupedProducts)
     return {
       loading: containerState.get('loading'),
       featuredProducts: _.toArray(groupedProducts)
