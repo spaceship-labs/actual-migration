@@ -9,7 +9,11 @@ const Section = Styled.section`
   justify-content: center;
   padding: 0 5%;
   background-color: #fff;
-  margin-top: 10px;
+  margin: 10px 0;
+  @media (min-width: ${devices.tablet}){
+    justify-content: flex-start;
+
+  }
 `;
 
 const SectionTitle = Styled.h1`

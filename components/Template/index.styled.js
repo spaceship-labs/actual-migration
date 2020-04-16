@@ -34,8 +34,8 @@ const CenteredContainer = Styled.div`
     flex-wrap:wrap;
 `;
 export {
-  Content,
-  WhiteContainer,
-  ParagraphContainer,
-  CenteredContainer,
+    Content,
+    WhiteContainer,
+    ParagraphContainer,
+    CenteredContainer,
 };

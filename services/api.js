@@ -34,4 +34,7 @@ export default {
       });
     },
   },
+  products: {
+    getProductsByCategory: (params) => post(`/ProductSearch/searchByCategory/`, params)
+  }
 };
