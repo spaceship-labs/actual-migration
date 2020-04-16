@@ -1,6 +1,6 @@
 import Flickity from 'react-flickity-component';
 import Styled from 'styled-components';
-import devices from '../../utils/devices';
+import devices from 'utils/devices';
 
 const Container = Styled.div`
   display: flex;
@@ -9,6 +9,7 @@ const Container = Styled.div`
 `;
 
 const Carousel = Styled(Flickity)`
+margin-top:7px;
 :focus {
   outline:none;
 }

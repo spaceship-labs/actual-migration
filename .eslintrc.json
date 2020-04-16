@@ -22,8 +22,24 @@
         "react"
     ],
     "rules": {
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ],
         "react/prop-types": 0,
         "react/jsx-props-no-spreading": "off"
-    }
+    },
+    "eslint.workingDirectories": [
+        "./public/assets",
+        "./components",
+        "./containers",
+        "./pages",
+        "./services",
+        "./utils"
+    ]
 }

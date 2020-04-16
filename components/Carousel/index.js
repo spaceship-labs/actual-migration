@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import Flickity from 'react-flickity-component';
+import RibbonShipping from 'assets/Coverphoto/ribbon.png';
 import { Container, Carousel as Flickity, Ribbon } from './index.styled';
-import RibbonShipping from '../../assets/Coverphoto/ribbon.png';
 
 class Carousel extends Component {
   constructor(props) {
@@ -35,9 +35,8 @@ class Carousel extends Component {
           reloadOnUpdate
           options={config}
         >
-          {imgs && imgs.map((img, index) => (
-            // eslint-disable-next-line react/no-array-index-key
-            <img key={index} src={img} alt="" />
+          {imgs && imgs.map((img) => (
+            <img key={img} src={img} alt="" />
           ))}
         </Flickity>
         <Container>

@@ -8,6 +8,22 @@
         "preprocess": false
       }
     ],
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./"
+        ],
+        "alias": {
+          "assets": "./public/assets",
+          "components": "./components",
+          "containers": "./containers",
+          "pages": "./pages",
+          "services": "./services",
+          "utils": "./utils"
+        }
+      }
+    ]
   ],
   "presets": [
     "next/babel"

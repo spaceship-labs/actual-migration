@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import TemplateLayout from '../../components/Template';
-import { ParagraphContainer } from '../../components/Template/index.styled';
+import TemplateLayout from 'components/Template';
+import { ParagraphContainer } from 'components/Template/index.styled';
 
 const MaintanceManualPage = () => (
   <TemplateLayout>

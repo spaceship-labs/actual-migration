@@ -1,4 +1,3 @@
-/* eslint-disable react/no-array-index-key */
 import React from 'react';
 import Link from 'next/link';
 import {
@@ -21,14 +20,19 @@ const Footer = () => (
       <Row isChild>
         {
           footerLinks.map((DataCol) => {
-            const { title, links, sections } = DataCol;
+            const {
+              id: masterId,
+              title,
+              links,
+              sections,
+            } = DataCol;
             return (
-              <Column key={title} isContainer>
+              <Column key={masterId} isContainer>
                 <Paragraph isTitle><strong>{title}</strong></Paragraph>
                 <Content>
                   {
-                      links && links.map(({ linkTitle, link }) => (
-                        <Link key={link} href={link} passHref>
+                      links && links.map(({ id, linkTitle, link }) => (
+                        <Link key={id} href={link} passHref>
                           <LinkText>
                             <Paragraph half>
                               {linkTitle}
@@ -38,8 +42,9 @@ const Footer = () => (
                       ))
                     }
                   {
-                    sections && sections.map((section, index) => {
+                    sections && sections.map((section) => {
                       const {
+                        id: sectionId,
                         sectionTitle,
                         sectionLink,
                         subtitle,
@@ -47,7 +52,7 @@ const Footer = () => (
                         schedule,
                       } = section;
                       return (
-                        <div key={index}>
+                        <div key={sectionId}>
                           {sectionLink
                             ? (
                               <Link href={sectionLink} passHref>
@@ -68,8 +73,8 @@ const Footer = () => (
                                 <Paragraph>{numbers.tel && 'Teléfono:'}</Paragraph>
                               </Column>
                               <Column>
-                                {numbers.tel && numbers.tel.map((telephone) => (
-                                  <Paragraph key={telephone}>{telephone}</Paragraph>
+                                {numbers.tel && numbers.tel.map(({ id: telephoneId, number }) => (
+                                  <Paragraph key={telephoneId}>{number}</Paragraph>
                                 ))}
                               </Column>
                             </Row>
@@ -78,18 +83,22 @@ const Footer = () => (
                                 <Paragraph>{numbers.cel && 'Celular:'}</Paragraph>
                               </Column>
                               <Column>
-                                {numbers.cel && numbers.cel.map((cellphone) => (
-                                  <Paragraph key={cellphone}>{cellphone}</Paragraph>
+                                {numbers.cel && numbers.cel.map(({ id: cellphoneId, number }) => (
+                                  <Paragraph key={cellphoneId}>{number}</Paragraph>
                                 ))}
                               </Column>
                             </Row>
                           </div>
                           )}
-                          {schedule && schedule.map(({ day, hours }) => (
-                            <Row isChild key={day}>
-                              <Column><Paragraph>{day}</Paragraph></Column>
+                          {schedule && schedule.map(({ id: scheduleId, day, hours }) => (
+                            <Row isChild key={scheduleId}>
                               <Column>
-                                {hours.map((hour) => <Paragraph key={hour}>{hour}</Paragraph>)}
+                                <Paragraph>{day}</Paragraph>
+                              </Column>
+                              <Column>
+                                {hours.map(({ id: HourId, hour }) => (
+                                  <Paragraph key={HourId}>{hour}</Paragraph>
+                                ))}
                               </Column>
                             </Row>
                           ))}
