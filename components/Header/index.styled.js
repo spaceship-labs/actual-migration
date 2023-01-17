@@ -9,7 +9,6 @@ const HeaderContainer = Styled(HeaderBar)`
   display: flex;
   padding: 2px 0;
 `;
-
 const Logo = Styled.div`
   margin-top:5px;
   display: flex;
@@ -17,17 +16,17 @@ const Logo = Styled.div`
   background-size: cover; 
   width: 30px;
   height: 30px;
-  background-image: url(${(props) => props.imgs[1]});
+  background-image: url(assets/Actual-Studio-Mobile-White-Logo.png);
   /* responsive query */
   @media (min-width: ${devices.tablet}) {
     width: 40px;
     height: 40px;
-    background-image: url(${(props) => props.imgs[1]});
+    background-image: url(assets/Actual-Studio-Mobile-White-Logo.png});
   }
   @media (min-width: ${devices.laptop}) {
     width: 140px;
     height: 70px;
-    background-image: url(${(props) => props.imgs[0]});
+    background-image: url(assets/Actual-Studio-White-Logo.png);
 
   }
 `;

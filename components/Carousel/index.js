@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 // import Flickity from 'react-flickity-component';
-import RibbonShipping from 'assets/Coverphoto/ribbon.png';
 import { Container, Carousel as Flickity, Ribbon } from './index.styled';
 
 class Carousel extends Component {
@@ -40,7 +39,7 @@ class Carousel extends Component {
           ))}
         </Flickity>
         <Container>
-          {imgs && <Ribbon src={RibbonShipping} />}
+          {imgs && <Ribbon src='assets/Coverphoto/ribbon.png' />}
         </Container>
       </div>
     );
